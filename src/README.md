@@ -1,64 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+#アプリケーション
+概要説明（どんなアプリか）
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<!-- トップ画面の画像 -->
 
-## About Laravel
+お問い合せフォームがあり、個人情報を入力する事で、誰からどんな意見が届いているのか分かりやすくします。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+内容確認画面でデータの内容に不備がないのか最終確認を行います。不備がなければ送信ボタンでデータを登録を行い、不備があれば修正するボタンを押して、お問い合せフォームに戻る仕組みを作成しています。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+送信ボタンを押すと、感謝の言葉が記載したページが作成されます。
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+管理システムでは、お問い合せフォームで入力した特定のデータを呼び出す検索機能を搭載したページを作成。名前、登録日、アドレスなどを指定することで、データを効率的に呼び込めるようにしています。また、入力データを全部初期状態に戻したい場合を想定して、リセットボタンを用意しました。
 
-## Learning Laravel
+管理システムの下側には、登録したデータを一覧表示できるようにしています。もしいらないデータがあれば、削除ボタンでデータを消せるようにしています。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+##作成した目的
+概要説明（なんで作成したのか）
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+１　お問い合せをスムーズに管理するためです。顧客からの質問や要望を一か所で管理できるので、迅速な対応が可能です。
 
-## Laravel Sponsors
+２　顧客の満足度を高めるためです。お問い合せに迅速に対応することで、早く解決したいという期待に応え、不安を解消する事で満足度が上がりやすくなります。
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+３　データを整理しやすくするためです。顧客情報をまとめて管理できるので、情報が見やすくすることができます。
 
-### Premium Partners
+４　サービスの改善に役立てるためです。お問い合せの内容を分析し、サービスの改善や新たなサービスの展開を見つけるヒントにできます。
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+これらの理由から、管理システムとお問い合せフォームが統合されたアプリは、顧客対応をスムーズにし、サービスの改善を支援する役割を果たします。
 
-## Contributing
+##アプリケーション URL
+デプロイの URL を貼り付ける
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 検索機能　送信機能
 
-## Code of Conduct
+## 使用技術
+Laravel Framework 8.83.27
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## テーブル設計
 
-## Security Vulnerabilities
+<!-- 作成したテーブル設計の画像 -->
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+##ER 図
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<!-- 作成したER図の画像 -->
